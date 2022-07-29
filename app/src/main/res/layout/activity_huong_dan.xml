@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".huongDan"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/hd1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BẠN PHẢI TRẢ LỜI 15 CÂU HỎI, MỖI CÂU HỎI CÓ 4 PHƯƠNG ÁN TRẢ LỜI VÀ ĐỘ KHÓ CỦA CÁC CÂU HỎI SẼ TĂNG DẦN QUA CÁC MỐC CÓ 3 MỐC QUAN TRỌNG LÀ 5-10-15."
+        android:textStyle="bold"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/hd2"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BẠN CÓ 4 SỰ TRỢ GIÚP : 50/50, GỌI ĐIỆN THOẠI CHO CHUYÊN GIA, HỎI Ý KIẾN KHÁN GIẢ TRONG TRƯỜNG QUAY, ĐỔI CÂU HỎI."
+        android:textStyle="bold">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/hd3"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BẠN ĐÃ NẮM RÕ LUẬT CỦA CỦA CHƯƠNG TRÌNH ?                 BẠN ĐÃ SẴN SÀNG CHƠI CHƯA ?"
+            android:textStyle="bold">
+
+        </TextView>
+        <Button
+            android:onClick="Yes"
+            android:id="@+id/SanSang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hd3"
+            android:layout_marginLeft="70dp"
+            android:text="YES">
+
+        </Button>
+        <Button
+            android:onClick="No"
+            android:id="@+id/chuaSanSang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hd3"
+            android:layout_toRightOf="@+id/SanSang"
+            android:layout_marginLeft="70dp"
+            android:text="NO">
+
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
